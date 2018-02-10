@@ -1,6 +1,6 @@
 ﻿namespace DsaaApp1
 {
-    partial class DsaaApp1
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -78,6 +78,7 @@
             this.BtnBasicSort.TabIndex = 2;
             this.BtnBasicSort.Text = "Basic Sort";
             this.BtnBasicSort.UseVisualStyleBackColor = true;
+            this.BtnBasicSort.Click += new System.EventHandler(this.BtnBasicSort_Click);
             // 
             // txtResult
             // 
@@ -91,7 +92,7 @@
             this.txtResult.Size = new System.Drawing.Size(649, 498);
             this.txtResult.TabIndex = 3;
             // 
-            // DsaaApp1
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -101,8 +102,9 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "DsaaApp1";
-            this.Text = "Form1";
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "DSAA App 1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

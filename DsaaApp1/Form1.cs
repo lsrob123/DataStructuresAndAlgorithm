@@ -2,14 +2,15 @@
 using System.Threading;
 using System.Windows.Forms;
 using DsaaApp1.Codes;
+using DsaaApp1.Codes._1.Sort;
 
 namespace DsaaApp1
 {
-    public partial class DsaaApp1 : Form, IUiUpdater
+    public partial class Form1 : Form, IUiUpdater
     {
         private readonly SynchronizationContext _synchronizationContext;
 
-        public DsaaApp1()
+        public Form1()
         {
             InitializeComponent();
 
@@ -28,6 +29,14 @@ namespace DsaaApp1
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void BtnBasicSort_Click(object sender, EventArgs e)
+        {
+            var cArray = new CArray(this, 10, true);
+            cArray.DisplayElements();
+            cArray.SelectionSort();
+            cArray.DisplayElements();
         }
     }
 }

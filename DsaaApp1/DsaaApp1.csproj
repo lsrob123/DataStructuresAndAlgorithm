@@ -47,7 +47,6 @@
   <ItemGroup>
     <Compile Include="Codes\1.Sort\CArray.cs" />
     <Compile Include="Codes\2.Search\Search.cs" />
-    <Compile Include="Codes\1.Sort\Sort.cs" />
     <Compile Include="Codes\IUiUpdater.cs" />
     <Compile Include="Codes\TestBedBase.cs" />
     <Compile Include="Form1.cs">
